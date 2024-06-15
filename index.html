@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+ <!-- Side navigation bar only for mobile and tabs-->
+    <div class="Sidebar">
+        <ul>
+            <!-- Logo image  -->
+            <li class="Logo">
+                <a href="#">
+                    <div class="Side-icon"><img src="loggo.jpg" alt="logo" class="Logo-image"></div>
+                    <div class="Logo-text">Prasunet</div>
+                </a>
+            </li>
+            <div class="menubar">
+                <li style="--bg:#f44336;" class="active">
+                    <a href="#">
+                        <div class="Side-icon"><img src="./side-icons/icons8-home-48.png" alt="Home"
+                                class="Side-icon-image"></div>
+                        <div class="Side-text">Home</div>
+                    </a>
+                </li>
+                <li style="--bg:#ffa117;">
+                    <a href="#">
+                        <div class="Side-icon"><img src="./side-icons/icons8-administrative-tools-48.png" alt="Services"
+                                class="Side-icon-image"></div>
+                        <div class="Side-text">Services</div>
+                        <span class="arrow"><img class="mark-image arrow-down" id="down1"
+                                src="./side-icons/icons8-down-button-64.png" alt=""></span>
+                        <span class="arrow "><img class="mark-image arrow-up" id="up1" src="./side-icons/icons8-up-arrow-64.png"
+                                alt=""></span>
+                    </a>
+                </li>
+                <ol class="Sidebar-Submenu" id="submenu1">
+                    <li class=" Sub-menulist bg1"><a href="#">Android Development</a></li>
+                    <li class="Sub-menulist bg1"><a href="#">Web Development</a></li>
+                    <li class="Sub-menulist bg1"><a href="#">Digital Marketing</a></li>
+                </ol>
+                <li style="--bg:#B33F20;">
+                    <a href="#">
+                        <div class="Side-icon"><img src="./side-icons/icons8-internship-50.png" alt="Intern"
+                                class="Side-icon-image"></div>
+                        <div class="Side-text">Internship</div>
+                        <span class="arrow"><img class="mark-image arrow-down" id="down2"
+                                src="./side-icons/icons8-down-button-64.png" alt=""></span>
+                        <span class="arrow "><img class="mark-image arrow-up" id="up2" src="./side-icons/icons8-up-arrow-64.png" alt=""></span>
+                    </a>
+                </li>
+
+                <ol class="Sidebar-Submenu" id="submenu2">
+                    <li class="Sub-menulist bg2"><a href="#">Web Development</a></li>
+                    <li class="Sub-menulist bg2"><a href="#">Android Development</a></li>
+                    <li class="Sub-menulist bg2"><a href="#">Machine Learning</a></li>
+                    <li class="Sub-menulist bg2"><a href="#">Data Science</a></li>
+                    <li class="Sub-menulist bg2"><a href="#">Cyber Security</a></li>
+                </ol>
+
+                <li style="--bg:#2196f3;">
+                    <a href="#">
+                        <div class="Side-icon"><img src="./side-icons/icons8-register-64.png" alt="Register"
+                                class="Side-icon-image"></div>
+                        <div class="Side-text">Register</div>
+                    </a>
+                </li>
+                <li style="--bg:#b145e9;">
+                    <a href="#">
+                        <div class="Side-icon"><img src="./side-icons/icons8-career-50.png" alt="Career"
+                                class="Side-icon-image"></div>
+                        <div class="Side-text">Career</div>
+                    </a>
+                </li>
+                <li style="--bg:#0fc70f;">
+                    <a href="#">
+                        <div class="Side-icon"><img src="./side-icons/icons8-call-32.png" alt="Contact"
+                                class="Side-icon-image"></div>
+                        <div class="Side-text">Contact</div>
+                    </a>
+                </li>
+                <li style="--bg:#2196f3;">
+                    <a href="#">
+                        <div class="Side-icon"><img src="./side-icons/icons8-about-50.png" alt="About"
+                                class="Side-icon-image"></div>
+                        <div class="Side-text">About</div>
+                    </a>
+                </li>
+            </div>
+        </ul>
+    </div>
+
+<!-- navbar for desktop and laptops -->
+
+    <div class="header">
+        <div class="logo">
+            <img class="logo-image" src="loggo.jpg" alt="logo">
+            <span class="logo-name">Prasunet</span>
+        </div>
+
+
+        <div class="nav">
+            <ul>
+                <li style="--bg:#f44336;" class="icon">
+                    <a class="menu" href="#">Home</a>
+                </li>
+                <li style="--bg:#ffa117;" class="icon">
+                    <a class="menu" href="#">Services</a>
+                    <ul class="Submenu MenuHover">
+                        <li><a href="#">Android Development</a></li>
+                        <li><a href="#">Web Development</a></li>
+                        <li><a href="#">Digital Marketing</a></li>
+                    </ul>
+                </li>
+                <li style="--bg:#B33F20;" class="icon">
+                    <a class="menu" href="#">Internship</a>
+                    <ul class="Submenu MenuHover">
+                        <li><a href="#">Web Development</a></li>
+                        <li><a href="#">Android Development</a></li>
+                        <li><a href="#">Machine Learning</a></li>
+                        <li><a href="#">Data Science</a></li>
+                        <li><a href="#">Cyber Security</a></li>
+                    </ul>
+                </li>
+                <li style="--bg:#00fffc;" class="icon">
+                    <a class="menu" href="#">Register</a>
+                </li>
+                <li style="--bg:#b145e9;" class="icon">
+                    <a class="menu" href="#">Career</a>
+                </li>
+                <li style="--bg:#0fc70f;" class="icon">
+                    <a class="menu" href="#">Contact</a>
+                </li>
+                <li style="--bg:#2196f3;" class="icon">
+                    <a class="menu" href="#">About</a>
+                </li>
+
+                <li class="mark-icon" onclick=showSidebar()>
+                    <img class="mark-image" id="menu-image" src="./side-icons/icons8-menu-64.png" alt="">
+                </li>
+                <li class="mark-icon" onclick=showSidebar()>
+                    <img class="mark-image" id="cross-image" src="./side-icons/icons8-cross-30.png" alt="">
+                </li>
+
+            </ul>
+        </div>
+    </div>
+
+
+
+</body>
+<script src="script.js"></script>
+
+
+</html>
